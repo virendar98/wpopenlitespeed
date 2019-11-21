@@ -1,0 +1,14 @@
+Step 1.
+
+sudo apt update
+sudo apt upgrade -y
+sudo apt dist-upgrade
+sudo apt autoclean
+sudo apt autoremove
+sudo reboot
+
+Step 2.
+
+wget -O - http://rpms.litespeedtech.com/debian/enable_lst_debian_repo.sh | bash
+apt-get install openlitespeed
+ln -sf /usr/local/lsws/lsphp73/bin/lsphp /usr/local/lsws/fcgi-bin/lsphp5
